@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="template1">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+    <script src="/webjars/bootstrap/5.3.2/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+<div layout:fragment="content1">
+    <div class="col-md-6 offset-3">
+        <form method="post" th:action="@{sauve}">
+            <div>
+                <br><label> id</label>
+                <input id="id" class="form-control" type="text" name="id" th:value="${fournisseure.id}">
+                <span th:errors="${fournisseure.id}"></span>
+
+            </div>
+            <div>
+                <br><label for="name"> NAME</label>
+                <input id="name" class="form-control" type="text" name="name" th:value="${fournisseure.name}">
+                <span th:errors="${fournisseure.name}"></span>
+
+            </div>
+            <div>
+                <br><label for="name"> Prenom</label>
+                <input id="prenom" class="form-control" type="text" name="prenom" th:value="${fournisseure.prenom}">
+                <span th:errors="${fournisseure.prenom}"></span>
+
+            </div>
+
+            <div>
+                <br><label> Quantity</label>
+                <input class="form-control" type="text" name="quantity" th:value="${fournisseure.quantity}">
+                <span th:errors="${fournisseure.quantity}"></span>
+
+            </div>
+            <div>
+                <br><label> Phone</label>
+                <input class="form-control" type="text" name="phone" th:value="${fournisseure.phone}">
+                <span th:errors="${fournisseure.phone}"></span>
+
+            </div>
+            <div>
+                <br><label> Nom du Produit</label>
+                <input class="form-control" type="text" name="productname" th:value="${fournisseure.productname}">
+                <span th:errors="${fournisseure.productname}"></span>
+
+            </div>
+
+
+            <!--<div>
+                <br><label for="category">Category</label><br>
+                <select id="category">
+                    <option value="electronique">Électronique</option>
+                    <option value="mode">Mode</option>
+                    <option value="Alimentation">Maison et cuisine</option>
+
+                </select>
+            </div>-->
+
+            <br><button type="submit" class="btn btn-primary">Save</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

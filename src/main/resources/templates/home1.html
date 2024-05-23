@@ -1,0 +1,72 @@
+<!doctype html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        lang="en"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+
+
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="stylesheet " href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css ">
+    <link href="/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<div layout:fragment="content1">
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container px-5">
+                <h1 class="masthead-heading mb-0">Find your product and your supplier</h1>
+
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="/login">Se connecter</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <!-- Content section 1-->
+    <section id="scroll">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="/002.jpg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Information on supplies...</h2>
+                        <p>search for all products posted by each supplier.</p>
+                        <a href="/login"><button type="submit" class="btn btn-info">Supplier </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 2-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="/001.jpg" alt="" /></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">Information on Product...</h2>
+                        <p>search for suppliers who have this product.</p>
+                        <a href="/login"><button type="submit" class="btn btn-info"> PRODUCT</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 3-->
+
+</div>
+</body>
+</html>
